@@ -1,0 +1,147 @@
+/*last Update: 21-05-2023*/
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap');
+
+body {
+    background-color: #EFEFEF;
+}
+
+h4 {
+  text-align: center;
+}
+
+#calculate {
+    position: absolute;
+    width: 250px;
+    heigth: 50px;
+    top: 550px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: "Quicksand", sans-serif;
+    background-color: mediumslateblue;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    display: block;
+    margin: 30px auto;
+    animation: pulse 2s infinite;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+}
+
+#calculate:hover {
+    cursor: pointer;
+    background-color: #00ff00;
+}
+
+#calculate:focus {
+    outline: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 208, 74, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(255, 208, 74, 0);
+    }
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 208, 74, 0);
+    }
+}
+
+#da {
+    position: absolute;
+    left: 50px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #0000ff;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+    width: 344px;
+    height: 680px;
+    left: auto;
+    margin: auto;
+    background-color: lightcoral;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#mon {
+    position: relative;
+    width: 170px;
+    height: 520px;
+    background-color: #DADADA;
+    top: 30px;
+    border: 1px solid black;
+}
+
+.monL {
+    position: relative;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#diem {
+    position:relative;
+    width: 170px;
+    top: -492px;
+    left: 170px;
+    height: 520px;
+    background-color: #DADADA;
+    border: 1px solid black;
+}
+
+#diemR {
+    position: relative;
+    background-color: #DADADA;
+    height: 50px;
+    border: 1px solid black;
+}
+
+/* .hold {
+    position: relative;
+    background-color: white;
+    margin-bottom: 2px;
+    width: 170px;
+    height: 50px;
+} */
+
+#type1, #type2, #type3, #type4, #type5, #type6, #type7, #type8, #type9 {
+    width: 162px;
+    height: 46px;
+    font-size: 25px;
+}
+
+input {
+  text-align: center;
+}
+
+input:focus {
+  outline-color:#ff0000;
+/*   outline: none; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+#results-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0bab64;
+    visibility: hidden;
+    height: 0;
+    padding: 2% 4%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
